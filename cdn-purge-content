@@ -31,10 +31,10 @@ function CallAPI($method, $url, $data = false)
 
     return $result;
 }
-$subscriptionId="1a3393fe-f92e-45df-973e-0a64dd3f5c78";
-$resourceGroups="os";
-$profileName="plzmart";
-$endpointName="plzmart";
+$subscriptionId="";
+$resourceGroups="";
+$profileName="";
+$endpointName="";
 $url="POST https://management.azure.com/subscriptions/"+$subscriptionId+"/resourceGroups/"+$resourceGroups+"/providers/Microsoft.Cdn/profiles/"+$profileName+"/endpoints/"+$endpointName+"/purge?api-version=2017-10-12";
 $Token="";
 $header=array();
@@ -43,5 +43,5 @@ $header[] = 'Accept:application/json';
 $header[] = 'Content-Type:application/json;charset=utf-8';
 json;charset='utf-8';
 $data=array();
-$data[]='contentPaths':'[/Headlight-Fog-Light-Switch-Kit-For-Audi-A6-4B-C5-Avant-S6-p-157650.html]';
+$data[]='contentPaths':'';
 CallAPI("POST",$url,$data);

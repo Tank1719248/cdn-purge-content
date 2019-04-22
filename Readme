@@ -1,0 +1,5 @@
+第一步：获取Azure的token，在Azure AD内新建应用，并记录app的tenantID和app的key（只会在生成后第一次就要复制）
+第二步：将上述两个内容放到token的代码里面相对应的位置
+第三步：修改purge代码，里面填写先对应的subscription ID，resource group Name ，CDN 的profile name 及endpoint name
+第四步：确认post的路径，路径格式
+第五步：将使用token代码执行获得的内容写入purge代码的token位置上
